@@ -1,0 +1,172 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta name="description" content="Portfolio of NguyenPT167 — web developer, designer, and creator." />
+  <title>NguyenPT167 — Web Developer</title>
+
+  <!-- Replace with your preferred font -->
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="brand" href="#home" aria-label="Home">NguyenPT167</a>
+
+      <nav class="nav" aria-label="Primary navigation">
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#work">Work</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" aria-pressed="false" aria-label="Toggle dark mode">🌗</button>
+        <a class="btn-outline" href="#work">View Work</a>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <section id="home" class="hero">
+      <div class="container hero-inner">
+        <div class="hero-copy">
+          <p class="eyebrow">Hello — I'm</p>
+          <h1 class="name">Nguyen Pham</h1>
+          <p class="lead">I build elegant, accessible websites and delightful user experiences.</p>
+
+          <p class="hero-ctas">
+            <a class="btn" href="#contact">Get in touch</a>
+            <a class="btn-link" href="#work">See my work</a>
+          </p>
+        </div>
+
+        <div class="hero-card" role="img" aria-label="Portrait placeholder">
+          <!-- Replace with your portrait image -->
+          <img src="https://images.unsplash.com/photo-1522071820081-009f0129c71c?q=80&w=800&auto=format&fit=crop&ixlib=rb-4.0.3&s=2a3f3bdf7c3b6b1a5e2f0b0f8b3f0b6a" alt="Portrait placeholder" />
+        </div>
+      </div>
+    </section>
+
+    <section id="about" class="section container">
+      <div class="grid about-grid">
+        <div>
+          <h2>About</h2>
+          <p>I'm a web developer focused on modern, accessible interfaces. I enjoy shaping ideas into polished and performant web experiences — from concept to deployment.</p>
+
+          <ul class="about-list">
+            <li><strong>Location:</strong> Hanoi, Vietnam</li>
+            <li><strong>Role:</strong> Front-end & UI Engineer</li>
+            <li><strong>Email:</strong> <a href="mailto:your.email@example.com">your.email@example.com</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h3>Highlights</h3>
+          <ul class="highlights">
+            <li>Responsive, accessible UI design</li>
+            <li>Performance-minded, semantic HTML</li>
+            <li>Clean animations and UX microinteractions</li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <section id="work" class="section container">
+      <h2>Selected Work</h2>
+
+      <div class="projects-grid" aria-live="polite">
+        <!-- Repeat or duplicate these project cards; replace images & links -->
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1529333166437-7750a6dd5a70?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=2b39f4c8afb8b8f9a4f0c5f9f4f2a0d2" alt="Project screenshot placeholder">
+          <div class="project-body">
+            <h3>Project One</h3>
+            <p class="muted">A landing page with performance-first build and accessible patterns.</p>
+            <p class="proj-actions">
+              <a href="#" class="btn-sm">Live</a>
+              <a href="#" class="btn-sm outline">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1515879218367-8466d910aaa4?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=3d2e5f9f7b4b4b6a5e2b3a4f9b6c1d3f" alt="Project screenshot placeholder">
+          <div class="project-body">
+            <h3>Project Two</h3>
+            <p class="muted">Design system and component library for scale.</p>
+            <p class="proj-actions">
+              <a href="#" class="btn-sm">Live</a>
+              <a href="#" class="btn-sm outline">Code</a>
+            </p>
+          </div>
+        </article>
+
+        <article class="project-card">
+          <img src="https://images.unsplash.com/photo-1454165804606-c3d57bc86b40?q=80&w=1600&auto=format&fit=crop&ixlib=rb-4.0.3&s=4f5e6a8b7c3d2a1f9b0c5e6d7a8b9c0d" alt="Project screenshot placeholder">
+          <div class="project-body">
+            <h3>Project Three</h3>
+            <p class="muted">Interactive data visualization and dashboards.</p>
+            <p class="proj-actions">
+              <a href="#" class="btn-sm">Live</a>
+              <a href="#" class="btn-sm outline">Code</a>
+            </p>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section id="skills" class="section container">
+      <h2>Skills</h2>
+      <div class="skills-grid">
+        <div class="skill">HTML &amp; Semantic Markup</div>
+        <div class="skill">CSS / Modern Layouts (Grid, Flexbox)</div>
+        <div class="skill">JavaScript (ES6+)</div>
+        <div class="skill">React / Vue (optional)</div>
+        <div class="skill">Performance & Accessibility</div>
+        <div class="skill">Design Systems</div>
+      </div>
+    </section>
+
+    <section id="contact" class="section container">
+      <h2>Contact</h2>
+      <div class="contact-grid">
+        <form id="contact-form" class="contact-form" action="mailto:your.email@example.com" method="post" enctype="text/plain" novalidate>
+          <label for="name">Name</label>
+          <input id="name" name="name" type="text" placeholder="Your name" required>
+
+          <label for="email">Email</label>
+          <input id="email" name="email" type="email" placeholder="you@domain.com" required>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="6" placeholder="Tell me about your project..." required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn">Send</button>
+            <button type="reset" class="btn-outline">Reset</button>
+          </div>
+        </form>
+
+        <aside class="contact-card" aria-hidden="false">
+          <h3>Let's build something great</h3>
+          <p>Prefer a direct email? <a href="mailto:your.email@example.com">your.email@example.com</a></p>
+          <p>Find me on <a href="#" target="_blank" rel="noopener">GitHub</a> • <a href="#" target="_blank" rel="noopener">LinkedIn</a></p>
+        </aside>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© <span id="year"></span> NguyenPT167. Built with care.</p>
+    </div>
+  </footer>
+
+  <script src="script.js" defer></script>
+</body>
+</html>
